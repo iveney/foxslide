@@ -1,6 +1,6 @@
 # foxslide #
 
-Live theme preview available at [AdrianArtiles.com](http://www.AdrianArtiles.com).
+Live theme preview available at [blog.ivansiu.com](http://blog.ivansiu.com).
 
 This is a theme built for [Octopress](http://Octopress.org) that is a work in progress with inspirations from all over the web. Built on top of [bootstrap](http://twitter.github.com/bootstrap/) and [html5 boilerplate](http://html5boilerplate.com/), and has SEO considerations along with instagram and twitter widgets out of the box.
 
@@ -8,7 +8,7 @@ This is a theme built for [Octopress](http://Octopress.org) that is a work in pr
 
 ````
 $ cd yourOctopress
-$ git submodule add https://github.com/sevenadrian/foxslide .themes/foxslide
+$ git submodule add https://github.com/iveney/foxslide .themes/foxslide
 $ git submodule update --init
 $ rake install['foxslide']
 $ rake generate
@@ -25,7 +25,7 @@ $ git submodule update
 ### Alternate installation without git submodule ###
 ````
 $ cd yourOctopress
-$ git clone https://github.com/sevenadrian/foxslide .themes/foxslide
+$ git clone https://github.com/iveney/foxslide .themes/foxslide
 $ rake install['foxslide']
 $ rake generate
 ````

@@ -1,0 +1,12 @@
+{% capture marker_link %}
+<a href="{{ root_url }}{{ post.url }}">
+<span class="post-marker post-marker-{{ site.linkblog.linkpost.marker_position }}">{{ site.linkblog.linkpost.marker }}</span>
+</a>
+{% endcapture %}
+{% if index or post.linkpost %}
+{% if post.linkpost and site.linkblog.linkpost.marker_position == 'before' %}{{ marker_link }}{% endif %}
+<a href="{{ post.title_url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+{% if post.linkpost and site.linkblog.linkpost.marker_position == 'after' %}{{ marker_link }}{% endif %}
+{% else %}
+<a href="{{ page.title_url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a>
+{% endif %}
